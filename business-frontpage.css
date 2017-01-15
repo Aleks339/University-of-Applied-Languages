@@ -92,3 +92,19 @@ body {
 .main-menu > li:hover .submenu {
     display:block;
 }
+.business-header {
+    height: 400px;
+    background: url('https://bigstickphotography.files.wordpress.com/2013/06/rsz_2740089.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-indent: 90px;
+}
+label {
+    display: inline-block;
+    width: 5em;
+}
+#section {
+    margin-top: 35px;
+}
