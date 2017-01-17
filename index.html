@@ -9,14 +9,55 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+$(document).ready(function(){
+    // Activate Carousel
+    $("#myCarousel").carousel({interval: 5000, pause: "click"});
+    
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#myCarousel").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#myCarousel").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#myCarousel").carousel(2);
+    });
+    $(".item4").click(function(){
+        $("#myCarousel").carousel(3);
+    });
+    
+    // Enable Carousel Controls
+    $(".left").click(function(){
+        $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function(){
+        $("#myCarousel").carousel("next");
+    });
 
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+
+  $( function() {
+    $( "#age" ).tooltip();
+  } );
+  </script>
 
     <title>University of Applied Languages</title>
 
     <!-- Bootstrap Core CSS -->
     <link href = "bootstrap.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    
+    <link rel="stylesheet" href="jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="jquery-ui.structure.css">
+    <link rel = "stylesheet" href = "jquery.ui.theme.css">
 
     <!-- Custom CSS -->
     <link href="business-frontpage.css" rel="stylesheet">
@@ -303,52 +344,13 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="jquery.js"></script>
-
-    <script type="text/javascript" src ="jquery-ui/jquery-ui.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap.min.js"></script>
     <script src="bootstrap.js"></script>
-    <script>
-        $(document).ready(function(){
-    // Activate Carousel
-    $("#myCarousel").carousel({interval: 5000, pause: "click"});
     
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
-    });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
-    });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
-    });
-    $(".item4").click(function(){
-        $("#myCarousel").carousel(3);
-    });
-    
-    // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
-    $(".right").click(function(){
-        $("#myCarousel").carousel("next");
-    });
-    $( function() {
-        $( "#accordion" ).accordion();
-    } );
-
-    $( function() {
-        $( "#age" ).tooltip();
-    } );
-});
-     </script>
-
-
 </body>
 
 </html>
+
+
 
